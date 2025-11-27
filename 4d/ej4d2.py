@@ -37,8 +37,10 @@ Exemple:
 
 """
 def create_read_file():
-    # Write here your code
-    pass
+    with open("text_file.txt", "w") as f:
+        f.writelines(["Joan\n", "Perez\n", "30\n"])
+    with open("text_file.txt") as f:
+        print(f.read())
 
 
 
